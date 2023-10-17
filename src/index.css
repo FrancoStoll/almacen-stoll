@@ -154,3 +154,33 @@ table th {
     width: fit-content;
   }
 }
+
+.offer {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  top: 23px;
+  z-index: 100;
+  left: -33px;
+  width: 140px;
+  box-shadow: 0 1px 10px 5px #666;
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: linear-gradient(
+    to bottom,
+    #1e5799 0%,
+    #e09013 1%,
+    #e5b3008c 100%
+  );
+}
+
+.content {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}

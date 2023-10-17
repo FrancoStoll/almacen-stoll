@@ -7,24 +7,24 @@ function App() {
         <Navbar />
       </nav>
       <main className="welcome">
-        <h1>Horarios de atencion</h1>
+        <h1>Opening hours</h1>
         <div className="hours">
           <table>
             <thead>
               <tr>
-                <th>Día</th>
-                <th>Horario</th>
+                <th>Day</th>
+                <th>Open</th>
               </tr>
             </thead>
 
             <tbody className="columns">
               <tr>
-                <td>Lunes a Sabado</td>
-                <td>8:30am a 9:30pm </td>
+                <td>Monday - Saturday</td>
+                <td>8:30am - 9:30pm </td>
               </tr>
               <tr>
-                <td>Domingo</td>
-                <td>9:00am a 1pm</td>
+                <td>Sunday</td>
+                <td>9:00am - 1pm</td>
               </tr>
             </tbody>
           </table>
