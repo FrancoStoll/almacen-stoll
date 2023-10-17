@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 226, 205);
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.navbar img {
+  width: 100%;
+  height: 300px;
+  filter: brightness(0.4);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 25px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: burlywood;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 5px rgba(222, 184, 135, 0.5);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .navbar img {
+    height: 500px;
+  }
+  .navbar h2 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: 85%;
+  }
+}
+
+.welcome {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.welcome h1 {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hours {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+table th,
+table td {
+  border: 1px solid rgb(224, 133, 14);
+  text-align: center;
+  text-align: left;
+  padding: 10px;
+}
+
+table th {
+  background-color: rgb(194, 112, 6);
+  color: #eee;
+}
+
+.columns tr:nth-child(even) {
+  background-color: rgb(206, 150, 76);
+}
+
+.columns tr:nth-child(odd) {
+  background-color: rgb(238, 192, 131);
+}
+
+@media (min-width: 768px) {
+  .hours {
+    width: 80%;
+  }
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.navegacion img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.navegacion .anchor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.navegacion .anchor a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: rgb(88, 91, 95);
+  width: 100%;
+  transition: background-color 300ms ease;
+}
+
+.navegacion .anchor a:hover {
+  background-color: rgba(222, 184, 135, 0.5);
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navegacion .anchor {
+    flex-direction: row;
+    width: fit-content;
+  }
+}
