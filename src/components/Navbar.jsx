@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navegacion">
-        <img src="../../public/images/imagen-log.jpeg" alt="hola" />
+        <img src="../assets/imagen-log.jpeg" alt="hola" />
 
         <div className="anchor">
           <a href="#">About</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="content">
           <div className="offer">Federal</div>
-          <img src="../../public/images/imagen-google.PNG" alt="imagen logo" />
+          <img src="../assets/imagen-google.PNG" alt="imagen logo" />
           {isOpen ? <h2>Open</h2> : <h2>Closed</h2>}
         </div>
       </div>
