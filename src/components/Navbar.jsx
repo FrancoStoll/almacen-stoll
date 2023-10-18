@@ -3,6 +3,11 @@ import { addHours, isSunday } from "date-fns";
 import { utcToZonedTime, format } from "date-fns-tz";
 import { resetDate } from "../helpers/resetDate";
 import { isMorningOpen, isAfternoon } from "../helpers/hours";
+import imagenLogo from '../assets/imagen-log.jpeg'
+import imagenHero from '../assets/imagen-google.jpg'
+
+// import imageHero from '../../public/images/imagen-google.PNG'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +36,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navegacion">
-        <img src="../assets/imagen-log.jpeg" alt="hola" />
+        <img src={imagenLogo} alt="hola" />
 
         <div className="anchor">
           <a href="#">About</a>
@@ -43,7 +48,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="content">
           <div className="offer">Federal</div>
-          <img src="../assets/imagen-google.PNG" alt="imagen logo" />
+          <img src={imagenHero} alt="imagen logo" />
           {isOpen ? <h2>Open</h2> : <h2>Closed</h2>}
         </div>
       </div>
