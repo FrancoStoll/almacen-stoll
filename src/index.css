@@ -109,8 +109,8 @@ table th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .navegacion img {
