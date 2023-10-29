@@ -113,6 +113,11 @@ table th {
   padding-bottom: 10px;
 }
 
+.menu-ham {
+  margin: 20px 0;
+  width: 30px;
+}
+
 .navegacion img {
   width: 100px;
   height: 100px;
@@ -127,10 +132,17 @@ table th {
   padding: 5px;
   text-align: center;
   width: 100%;
+  display: none;
+  transition: display .3s ease;
+}
+
+.navegacion .anchor.show {
+  display: block;
 }
 
 .navegacion .anchor a {
   text-decoration: none;
+  display: block;
   padding: 10px;
   margin: 0 auto;
   font-weight: bold;
@@ -152,6 +164,13 @@ table th {
   .navegacion .anchor {
     flex-direction: row;
     width: fit-content;
+    display: block;
+  }
+  .menu-ham {
+    display: none;
+  }
+  .navegacion .anchor a {
+    display: inline;
   }
 }
 
