@@ -41,7 +41,7 @@ const Hero = () => {
       <div className="content">
         <div className="offer">Federal</div>
         <img src={imagenHero} alt="imagen logo" />
-        {isOpen ? <h2>Open</h2> : <h2>Closed</h2>}
+        {isOpen ? <h2>Abierto</h2> : <h2>Cerrado</h2>}
       </div>
     </div>
   );
