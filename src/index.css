@@ -74,6 +74,7 @@ h1 {
   text-align: center;
 }
 table {
+  margin: 0 auto;
   width: 60%;
   border-collapse: collapse;
   margin: 20px 0;
