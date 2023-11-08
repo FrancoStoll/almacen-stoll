@@ -1,35 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App() {
+function App({ children }) {
   return (
     <>
-      <nav>
-        <Navbar />
-      </nav>
-      <main className="welcome">
-        <h1>Opening hours</h1>
-        <div className="hours">
-          <table>
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Open</th>
-              </tr>
-            </thead>
+      <Layout />
 
-            <tbody className="columns">
-              <tr>
-                <td>Monday - Saturday</td>
-                <td>8:30am - 9:30pm </td>
-              </tr>
-              <tr>
-                <td>Sunday</td>
-                <td>9:00am - 1pm</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
+      <main>{children}</main>
+
+      <Footer />  
     </>
   );
 }

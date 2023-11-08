@@ -70,6 +70,9 @@ body {
   width: 100%;
 }
 
+h1 {
+  text-align: center;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -133,7 +136,7 @@ table th {
   text-align: center;
   width: 100%;
   display: none;
-  transition: display .3s ease;
+  transition: display 0.3s ease;
 }
 
 .navegacion .anchor.show {
@@ -202,4 +205,30 @@ table th {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+}
+
+footer {
+  background-color: #666;
+  height: 50px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.numeros {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.numeros-li {
+  padding: 10px;
+  border-bottom: 1px solid rgb(75 72 72 / 0.3);
 }
